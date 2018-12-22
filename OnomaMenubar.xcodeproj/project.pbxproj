@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77065C8721CDAEF900140C90 /* HelperAuthorizationRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065C7621CDAE4F00140C90 /* HelperAuthorizationRight.swift */; };
+		77065C8821CDAEF900140C90 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065C7821CDAE9F00140C90 /* Helper.swift */; };
+		77065C8921CDAEF900140C90 /* HelperAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065C7421CDAE2B00140C90 /* HelperAuthorization.swift */; };
+		77065C8B21CDAEF900140C90 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065C7221CDACEF00140C90 /* HelperProtocol.swift */; };
+		77065C8C21CDAEF900140C90 /* HelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065C7021CD962E00140C90 /* HelperConstants.swift */; };
+		77065C8E21CDAF4B00140C90 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065C8D21CDAF4B00140C90 /* main.swift */; };
+		77065C9321CDB11800140C90 /* CodesignCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065C9221CDB11800140C90 /* CodesignCheck.swift */; };
+		77065C9521CDB13B00140C90 /* AppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065C9421CDB13B00140C90 /* AppProtocol.swift */; };
+		77065C9621CDB17200140C90 /* AppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065C9421CDB13B00140C90 /* AppProtocol.swift */; };
+		77065C9A21CDB1E200140C90 /* com.kyokan.HNSDHelper in Copy Helper */ = {isa = PBXBuildFile; fileRef = 77065C8021CDAEE900140C90 /* com.kyokan.HNSDHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		77065C9B21CDB20700140C90 /* HelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065C7021CD962E00140C90 /* HelperConstants.swift */; };
+		77065C9C21CDB21400140C90 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065C7221CDACEF00140C90 /* HelperProtocol.swift */; };
+		77065C9D21CDB21400140C90 /* HelperAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065C7421CDAE2B00140C90 /* HelperAuthorization.swift */; };
+		77065C9E21CDB21400140C90 /* HelperAuthorizationRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065C7621CDAE4F00140C90 /* HelperAuthorizationRight.swift */; };
+		77065CA121CDB37900140C90 /* HelperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065CA021CDB37900140C90 /* HelperManager.swift */; };
+		77065CA921CDCC2E00140C90 /* hnsd in Copy HSD */ = {isa = PBXBuildFile; fileRef = 77065C6E21CD93C800140C90 /* hnsd */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		77065CAB21CDD7A700140C90 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77065CAA21CDD7A700140C90 /* AboutWindow.xib */; };
+		77065CAD21CDD81500140C90 /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065CAC21CDD81500140C90 /* AboutWindowController.swift */; };
+		7714108721CD7B6000D8D58B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714108621CD7B6000D8D58B /* AppDelegate.swift */; };
+		7714108921CD7B6200D8D58B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7714108821CD7B6200D8D58B /* Assets.xcassets */; };
+		7714108C21CD7B6300D8D58B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7714108A21CD7B6300D8D58B /* MainMenu.xib */; };
+		7714109821CD7B6300D8D58B /* OnomaMenubarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714109721CD7B6300D8D58B /* OnomaMenubarTests.swift */; };
+		771410A321CD7B6300D8D58B /* OnomaMenubarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771410A221CD7B6300D8D58B /* OnomaMenubarUITests.swift */; };
+		779D2F9E21CD86AE00AD8206 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D2F9D21CD86AE00AD8206 /* StatusMenuController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77065C9721CDB19F00140C90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7714107B21CD7B6000D8D58B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77065C7F21CDAEE900140C90;
+			remoteInfo = HNSDHelper;
+		};
+		7714109421CD7B6300D8D58B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7714107B21CD7B6000D8D58B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7714108221CD7B6000D8D58B;
+			remoteInfo = OnomaMenubar;
+		};
+		7714109F21CD7B6300D8D58B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7714107B21CD7B6000D8D58B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7714108221CD7B6000D8D58B;
+			remoteInfo = OnomaMenubar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77065C9921CDB1CC00140C90 /* Copy Helper */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				77065C9A21CDB1E200140C90 /* com.kyokan.HNSDHelper in Copy Helper */,
+			);
+			name = "Copy Helper";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77065CA821CDCC2000140C90 /* Copy HSD */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				77065CA921CDCC2E00140C90 /* hnsd in Copy HSD */,
+			);
+			name = "Copy HSD";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		77065C6E21CD93C800140C90 /* hnsd */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = hnsd; sourceTree = "<group>"; };
+		77065C7021CD962E00140C90 /* HelperConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperConstants.swift; sourceTree = "<group>"; };
+		77065C7221CDACEF00140C90 /* HelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperProtocol.swift; sourceTree = "<group>"; };
+		77065C7421CDAE2B00140C90 /* HelperAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperAuthorization.swift; sourceTree = "<group>"; };
+		77065C7621CDAE4F00140C90 /* HelperAuthorizationRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperAuthorizationRight.swift; sourceTree = "<group>"; };
+		77065C7821CDAE9F00140C90 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		77065C8021CDAEE900140C90 /* com.kyokan.HNSDHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.kyokan.HNSDHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		77065C8D21CDAF4B00140C90 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		77065C8F21CDAFBA00140C90 /* Helper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Helper-Info.plist"; sourceTree = "<group>"; };
+		77065C9021CDB03700140C90 /* Helper-Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Helper-Launchd.plist"; sourceTree = "<group>"; };
+		77065C9221CDB11800140C90 /* CodesignCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodesignCheck.swift; sourceTree = "<group>"; };
+		77065C9421CDB13B00140C90 /* AppProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProtocol.swift; sourceTree = "<group>"; };
+		77065CA021CDB37900140C90 /* HelperManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperManager.swift; sourceTree = "<group>"; };
+		77065CA321CDBAA100140C90 /* CodeSignUpdate.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CodeSignUpdate.sh; sourceTree = "<group>"; };
+		77065CAA21CDD7A700140C90 /* AboutWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
+		77065CAC21CDD81500140C90 /* AboutWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
+		7714108321CD7B6000D8D58B /* OnomaMenubar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnomaMenubar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7714108621CD7B6000D8D58B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7714108821CD7B6200D8D58B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7714108B21CD7B6300D8D58B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7714108D21CD7B6300D8D58B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7714108E21CD7B6300D8D58B /* OnomaMenubar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OnomaMenubar.entitlements; sourceTree = "<group>"; };
+		7714109321CD7B6300D8D58B /* OnomaMenubarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnomaMenubarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7714109721CD7B6300D8D58B /* OnomaMenubarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnomaMenubarTests.swift; sourceTree = "<group>"; };
+		7714109921CD7B6300D8D58B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7714109E21CD7B6300D8D58B /* OnomaMenubarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnomaMenubarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		771410A221CD7B6300D8D58B /* OnomaMenubarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnomaMenubarUITests.swift; sourceTree = "<group>"; };
+		771410A421CD7B6300D8D58B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		779D2F9D21CD86AE00AD8206 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77065C7D21CDAEE900140C90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7714108021CD7B6000D8D58B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7714109021CD7B6300D8D58B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7714109B21CD7B6300D8D58B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77065C8121CDAEE900140C90 /* HNSDHelper */ = {
+			isa = PBXGroup;
+			children = (
+				77065C7021CD962E00140C90 /* HelperConstants.swift */,
+				77065C7221CDACEF00140C90 /* HelperProtocol.swift */,
+				77065C7421CDAE2B00140C90 /* HelperAuthorization.swift */,
+				77065C7621CDAE4F00140C90 /* HelperAuthorizationRight.swift */,
+				77065C7821CDAE9F00140C90 /* Helper.swift */,
+				77065C8D21CDAF4B00140C90 /* main.swift */,
+				77065C8F21CDAFBA00140C90 /* Helper-Info.plist */,
+				77065C9021CDB03700140C90 /* Helper-Launchd.plist */,
+			);
+			path = HNSDHelper;
+			sourceTree = "<group>";
+		};
+		77065C9121CDB10200140C90 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				77065C9221CDB11800140C90 /* CodesignCheck.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		77065CA221CDBA8F00140C90 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				77065CA321CDBAA100140C90 /* CodeSignUpdate.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		7714107A21CD7B6000D8D58B = {
+			isa = PBXGroup;
+			children = (
+				77065CA221CDBA8F00140C90 /* Scripts */,
+				77065C9121CDB10200140C90 /* Utility */,
+				7714108521CD7B6000D8D58B /* OnomaMenubar */,
+				7714109621CD7B6300D8D58B /* OnomaMenubarTests */,
+				771410A121CD7B6300D8D58B /* OnomaMenubarUITests */,
+				77065C8121CDAEE900140C90 /* HNSDHelper */,
+				7714108421CD7B6000D8D58B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7714108421CD7B6000D8D58B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7714108321CD7B6000D8D58B /* OnomaMenubar.app */,
+				7714109321CD7B6300D8D58B /* OnomaMenubarTests.xctest */,
+				7714109E21CD7B6300D8D58B /* OnomaMenubarUITests.xctest */,
+				77065C8021CDAEE900140C90 /* com.kyokan.HNSDHelper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7714108521CD7B6000D8D58B /* OnomaMenubar */ = {
+			isa = PBXGroup;
+			children = (
+				77065C6E21CD93C800140C90 /* hnsd */,
+				7714108621CD7B6000D8D58B /* AppDelegate.swift */,
+				7714108821CD7B6200D8D58B /* Assets.xcassets */,
+				7714108A21CD7B6300D8D58B /* MainMenu.xib */,
+				77065CAA21CDD7A700140C90 /* AboutWindow.xib */,
+				77065CAC21CDD81500140C90 /* AboutWindowController.swift */,
+				7714108D21CD7B6300D8D58B /* Info.plist */,
+				7714108E21CD7B6300D8D58B /* OnomaMenubar.entitlements */,
+				779D2F9D21CD86AE00AD8206 /* StatusMenuController.swift */,
+				77065C9421CDB13B00140C90 /* AppProtocol.swift */,
+				77065CA021CDB37900140C90 /* HelperManager.swift */,
+			);
+			path = OnomaMenubar;
+			sourceTree = "<group>";
+		};
+		7714109621CD7B6300D8D58B /* OnomaMenubarTests */ = {
+			isa = PBXGroup;
+			children = (
+				7714109721CD7B6300D8D58B /* OnomaMenubarTests.swift */,
+				7714109921CD7B6300D8D58B /* Info.plist */,
+			);
+			path = OnomaMenubarTests;
+			sourceTree = "<group>";
+		};
+		771410A121CD7B6300D8D58B /* OnomaMenubarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				771410A221CD7B6300D8D58B /* OnomaMenubarUITests.swift */,
+				771410A421CD7B6300D8D58B /* Info.plist */,
+			);
+			path = OnomaMenubarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77065C7F21CDAEE900140C90 /* HNSDHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77065C8421CDAEE900140C90 /* Build configuration list for PBXNativeTarget "HNSDHelper" */;
+			buildPhases = (
+				77065CA421CDBB0D00140C90 /* ShellScript */,
+				77065C7C21CDAEE900140C90 /* Sources */,
+				77065C7D21CDAEE900140C90 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HNSDHelper;
+			productName = HNSDHelper;
+			productReference = 77065C8021CDAEE900140C90 /* com.kyokan.HNSDHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+		7714108221CD7B6000D8D58B /* OnomaMenubar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 771410A721CD7B6300D8D58B /* Build configuration list for PBXNativeTarget "OnomaMenubar" */;
+			buildPhases = (
+				77065CA521CDBB2B00140C90 /* ShellScript */,
+				7714107F21CD7B6000D8D58B /* Sources */,
+				7714108021CD7B6000D8D58B /* Frameworks */,
+				7714108121CD7B6000D8D58B /* Resources */,
+				77065C9921CDB1CC00140C90 /* Copy Helper */,
+				77065CA821CDCC2000140C90 /* Copy HSD */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77065C9821CDB19F00140C90 /* PBXTargetDependency */,
+			);
+			name = OnomaMenubar;
+			productName = OnomaMenubar;
+			productReference = 7714108321CD7B6000D8D58B /* OnomaMenubar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7714109221CD7B6300D8D58B /* OnomaMenubarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 771410AA21CD7B6300D8D58B /* Build configuration list for PBXNativeTarget "OnomaMenubarTests" */;
+			buildPhases = (
+				7714108F21CD7B6300D8D58B /* Sources */,
+				7714109021CD7B6300D8D58B /* Frameworks */,
+				7714109121CD7B6300D8D58B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7714109521CD7B6300D8D58B /* PBXTargetDependency */,
+			);
+			name = OnomaMenubarTests;
+			productName = OnomaMenubarTests;
+			productReference = 7714109321CD7B6300D8D58B /* OnomaMenubarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7714109D21CD7B6300D8D58B /* OnomaMenubarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 771410AD21CD7B6300D8D58B /* Build configuration list for PBXNativeTarget "OnomaMenubarUITests" */;
+			buildPhases = (
+				7714109A21CD7B6300D8D58B /* Sources */,
+				7714109B21CD7B6300D8D58B /* Frameworks */,
+				7714109C21CD7B6300D8D58B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				771410A021CD7B6300D8D58B /* PBXTargetDependency */,
+			);
+			name = OnomaMenubarUITests;
+			productName = OnomaMenubarUITests;
+			productReference = 7714109E21CD7B6300D8D58B /* OnomaMenubarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7714107B21CD7B6000D8D58B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Kyokan;
+				TargetAttributes = {
+					77065C7F21CDAEE900140C90 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					7714108221CD7B6000D8D58B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					7714109221CD7B6300D8D58B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7714108221CD7B6000D8D58B;
+					};
+					7714109D21CD7B6300D8D58B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7714108221CD7B6000D8D58B;
+					};
+				};
+			};
+			buildConfigurationList = 7714107E21CD7B6000D8D58B /* Build configuration list for PBXProject "OnomaMenubar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7714107A21CD7B6000D8D58B;
+			productRefGroup = 7714108421CD7B6000D8D58B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7714108221CD7B6000D8D58B /* OnomaMenubar */,
+				7714109221CD7B6300D8D58B /* OnomaMenubarTests */,
+				7714109D21CD7B6300D8D58B /* OnomaMenubarUITests */,
+				77065C7F21CDAEE900140C90 /* HNSDHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7714108121CD7B6000D8D58B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7714108921CD7B6200D8D58B /* Assets.xcassets in Resources */,
+				7714108C21CD7B6300D8D58B /* MainMenu.xib in Resources */,
+				77065CAB21CDD7A700140C90 /* AboutWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7714109121CD7B6300D8D58B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7714109C21CD7B6300D8D58B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77065CA421CDBB0D00140C90 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}\"/Scripts/CodeSignUpdate.sh\n";
+		};
+		77065CA521CDBB2B00140C90 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}\"/Scripts/CodeSignUpdate.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77065C7C21CDAEE900140C90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77065C9621CDB17200140C90 /* AppProtocol.swift in Sources */,
+				77065C8721CDAEF900140C90 /* HelperAuthorizationRight.swift in Sources */,
+				77065C8C21CDAEF900140C90 /* HelperConstants.swift in Sources */,
+				77065C8E21CDAF4B00140C90 /* main.swift in Sources */,
+				77065C8921CDAEF900140C90 /* HelperAuthorization.swift in Sources */,
+				77065C8821CDAEF900140C90 /* Helper.swift in Sources */,
+				77065C8B21CDAEF900140C90 /* HelperProtocol.swift in Sources */,
+				77065C9321CDB11800140C90 /* CodesignCheck.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7714107F21CD7B6000D8D58B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77065C9C21CDB21400140C90 /* HelperProtocol.swift in Sources */,
+				77065CA121CDB37900140C90 /* HelperManager.swift in Sources */,
+				77065C9D21CDB21400140C90 /* HelperAuthorization.swift in Sources */,
+				77065C9E21CDB21400140C90 /* HelperAuthorizationRight.swift in Sources */,
+				77065C9B21CDB20700140C90 /* HelperConstants.swift in Sources */,
+				779D2F9E21CD86AE00AD8206 /* StatusMenuController.swift in Sources */,
+				77065CAD21CDD81500140C90 /* AboutWindowController.swift in Sources */,
+				77065C9521CDB13B00140C90 /* AppProtocol.swift in Sources */,
+				7714108721CD7B6000D8D58B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7714108F21CD7B6300D8D58B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7714109821CD7B6300D8D58B /* OnomaMenubarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7714109A21CD7B6300D8D58B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				771410A321CD7B6300D8D58B /* OnomaMenubarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77065C9821CDB19F00140C90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77065C7F21CDAEE900140C90 /* HNSDHelper */;
+			targetProxy = 77065C9721CDB19F00140C90 /* PBXContainerItemProxy */;
+		};
+		7714109521CD7B6300D8D58B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7714108221CD7B6000D8D58B /* OnomaMenubar */;
+			targetProxy = 7714109421CD7B6300D8D58B /* PBXContainerItemProxy */;
+		};
+		771410A021CD7B6300D8D58B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7714108221CD7B6000D8D58B /* OnomaMenubar */;
+			targetProxy = 7714109F21CD7B6300D8D58B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7714108A21CD7B6300D8D58B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7714108B21CD7B6300D8D58B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77065C8521CDAEE900140C90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9K92Z9CUR5;
+				INFOPLIST_FILE = "$(SRCROOT)/HNSDHelper/Helper-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyokan.HNSDHelper;
+				PRODUCT_NAME = com.kyokan.HNSDHelper;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		77065C8621CDAEE900140C90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9K92Z9CUR5;
+				INFOPLIST_FILE = "$(SRCROOT)/HNSDHelper/Helper-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyokan.HNSDHelper;
+				PRODUCT_NAME = com.kyokan.HNSDHelper;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		771410A521CD7B6300D8D58B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"$(SRCROOT)/HNSDHelper/Helper-Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"$(SRCROOT)/HNSDHelper/Helper-Launchd.plist\"",
+				);
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		771410A621CD7B6300D8D58B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"$(SRCROOT)/HNSDHelper/Helper-Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"$(SRCROOT)/HNSDHelper/Helper-Launchd.plist\"",
+				);
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		771410A821CD7B6300D8D58B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_ENTITLEMENTS = OnomaMenubar/OnomaMenubar.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9K92Z9CUR5;
+				INFOPLIST_FILE = OnomaMenubar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyokan.OnomaMenubar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		771410A921CD7B6300D8D58B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_ENTITLEMENTS = OnomaMenubar/OnomaMenubar.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9K92Z9CUR5;
+				INFOPLIST_FILE = OnomaMenubar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyokan.OnomaMenubar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		771410AB21CD7B6300D8D58B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OnomaMenubarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyokan.OnomaMenubarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnomaMenubar.app/Contents/MacOS/OnomaMenubar";
+			};
+			name = Debug;
+		};
+		771410AC21CD7B6300D8D58B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OnomaMenubarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyokan.OnomaMenubarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnomaMenubar.app/Contents/MacOS/OnomaMenubar";
+			};
+			name = Release;
+		};
+		771410AE21CD7B6300D8D58B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OnomaMenubarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyokan.OnomaMenubarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = OnomaMenubar;
+			};
+			name = Debug;
+		};
+		771410AF21CD7B6300D8D58B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OnomaMenubarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyokan.OnomaMenubarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = OnomaMenubar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77065C8421CDAEE900140C90 /* Build configuration list for PBXNativeTarget "HNSDHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77065C8521CDAEE900140C90 /* Debug */,
+				77065C8621CDAEE900140C90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7714107E21CD7B6000D8D58B /* Build configuration list for PBXProject "OnomaMenubar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				771410A521CD7B6300D8D58B /* Debug */,
+				771410A621CD7B6300D8D58B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		771410A721CD7B6300D8D58B /* Build configuration list for PBXNativeTarget "OnomaMenubar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				771410A821CD7B6300D8D58B /* Debug */,
+				771410A921CD7B6300D8D58B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		771410AA21CD7B6300D8D58B /* Build configuration list for PBXNativeTarget "OnomaMenubarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				771410AB21CD7B6300D8D58B /* Debug */,
+				771410AC21CD7B6300D8D58B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		771410AD21CD7B6300D8D58B /* Build configuration list for PBXNativeTarget "OnomaMenubarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				771410AE21CD7B6300D8D58B /* Debug */,
+				771410AF21CD7B6300D8D58B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7714107B21CD7B6000D8D58B /* Project object */;
+}

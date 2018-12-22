@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="OnomaMenubar" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="Gdc-Bm-0su" customClass="StatusMenuController" customModule="OnomaMenubar" customModuleProvider="target">
+            <connections>
+                <outlet property="startStop" destination="PzO-U1-8TY" id="van-t9-ncQ"/>
+                <outlet property="statusMenu" destination="eKy-l4-I4u" id="XEg-Sd-Bt4"/>
+            </connections>
+        </customObject>
+        <menu id="eKy-l4-I4u">
+            <items>
+                <menuItem title="Start" id="PzO-U1-8TY">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="startStopClicked:" target="Gdc-Bm-0su" id="RIa-NJ-mlj"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="About" id="isj-vN-8vx">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="aboutClicked:" target="Gdc-Bm-0su" id="pId-MJ-Lm1"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="HUN-L3-21R"/>
+                <menuItem title="Quit" id="StG-vs-P5P">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClicked:" target="Gdc-Bm-0su" id="adL-NO-kdN"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>
