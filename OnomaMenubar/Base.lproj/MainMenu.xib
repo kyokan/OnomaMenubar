@@ -15,7 +15,8 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <customObject id="Gdc-Bm-0su" customClass="StatusMenuController" customModule="OnomaMenubar" customModuleProvider="target">
             <connections>
-                <outlet property="startStop" destination="PzO-U1-8TY" id="van-t9-ncQ"/>
+                <outlet property="openAtLoginMenuItem" destination="TZR-cw-XzG" id="0O3-IP-HXT"/>
+                <outlet property="startStopMenuItem" destination="PzO-U1-8TY" id="van-t9-ncQ"/>
                 <outlet property="statusMenu" destination="eKy-l4-I4u" id="XEg-Sd-Bt4"/>
             </connections>
         </customObject>
@@ -25,6 +26,12 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="startStopClicked:" target="Gdc-Bm-0su" id="RIa-NJ-mlj"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Open at Login" id="TZR-cw-XzG">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openAtLoginClicked:" target="Gdc-Bm-0su" id="HKU-L5-Wdr"/>
                     </connections>
                 </menuItem>
                 <menuItem title="About" id="isj-vN-8vx">

@@ -22,7 +22,7 @@
 		77065C9D21CDB21400140C90 /* HelperAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065C7421CDAE2B00140C90 /* HelperAuthorization.swift */; };
 		77065C9E21CDB21400140C90 /* HelperAuthorizationRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065C7621CDAE4F00140C90 /* HelperAuthorizationRight.swift */; };
 		77065CA121CDB37900140C90 /* HelperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065CA021CDB37900140C90 /* HelperManager.swift */; };
-		77065CA921CDCC2E00140C90 /* hnsd in Copy HSD */ = {isa = PBXBuildFile; fileRef = 77065C6E21CD93C800140C90 /* hnsd */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		77065CA921CDCC2E00140C90 /* hnsd in Copy Binaries */ = {isa = PBXBuildFile; fileRef = 77065C6E21CD93C800140C90 /* hnsd */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		77065CAB21CDD7A700140C90 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77065CAA21CDD7A700140C90 /* AboutWindow.xib */; };
 		77065CAD21CDD81500140C90 /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77065CAC21CDD81500140C90 /* AboutWindowController.swift */; };
 		7714108721CD7B6000D8D58B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714108621CD7B6000D8D58B /* AppDelegate.swift */; };
@@ -30,7 +30,11 @@
 		7714108C21CD7B6300D8D58B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7714108A21CD7B6300D8D58B /* MainMenu.xib */; };
 		7714109821CD7B6300D8D58B /* OnomaMenubarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714109721CD7B6300D8D58B /* OnomaMenubarTests.swift */; };
 		771410A321CD7B6300D8D58B /* OnomaMenubarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771410A221CD7B6300D8D58B /* OnomaMenubarUITests.swift */; };
+		774E4E0E21D09ED300B033A6 /* setdns.sh in Copy Scripts */ = {isa = PBXBuildFile; fileRef = 77D0F8D021D0683A00AA3C2F /* setdns.sh */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		779D2F9E21CD86AE00AD8206 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D2F9D21CD86AE00AD8206 /* StatusMenuController.swift */; };
+		77D7C8C121D0AC58004C1864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D7C8C021D0AC58004C1864 /* AppDelegate.swift */; };
+		77D7C8D221D0AC59004C1864 /* OnomaMenubarLauncherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D7C8D121D0AC59004C1864 /* OnomaMenubarLauncherTests.swift */; };
+		77D7C8E921D0AF7D004C1864 /* OnomaMenubarLauncher.app in Copy Login Items */ = {isa = PBXBuildFile; fileRef = 77D7C8BE21D0AC58004C1864 /* OnomaMenubarLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,20 @@
 			remoteGlobalIDString = 7714108221CD7B6000D8D58B;
 			remoteInfo = OnomaMenubar;
 		};
+		77D7C8CE21D0AC59004C1864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7714107B21CD7B6000D8D58B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77D7C8BD21D0AC58004C1864;
+			remoteInfo = OnomaMenubarLauncher;
+		};
+		77D7C8EA21D0AFAB004C1864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7714107B21CD7B6000D8D58B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77D7C8BD21D0AC58004C1864;
+			remoteInfo = OnomaMenubarLauncher;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,15 +87,37 @@
 			name = "Copy Helper";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77065CA821CDCC2000140C90 /* Copy HSD */ = {
+		77065CA821CDCC2000140C90 /* Copy Binaries */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				77065CA921CDCC2E00140C90 /* hnsd in Copy HSD */,
+				77065CA921CDCC2E00140C90 /* hnsd in Copy Binaries */,
 			);
-			name = "Copy HSD";
+			name = "Copy Binaries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		774E4E0D21D09EC300B033A6 /* Copy Scripts */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				774E4E0E21D09ED300B033A6 /* setdns.sh in Copy Scripts */,
+			);
+			name = "Copy Scripts";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D7C8E821D0AF5C004C1864 /* Copy Login Items */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				77D7C8E921D0AF7D004C1864 /* OnomaMenubarLauncher.app in Copy Login Items */,
+			);
+			name = "Copy Login Items";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -104,14 +144,22 @@
 		7714108821CD7B6200D8D58B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7714108B21CD7B6300D8D58B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7714108D21CD7B6300D8D58B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7714108E21CD7B6300D8D58B /* OnomaMenubar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OnomaMenubar.entitlements; sourceTree = "<group>"; };
 		7714109321CD7B6300D8D58B /* OnomaMenubarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnomaMenubarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7714109721CD7B6300D8D58B /* OnomaMenubarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnomaMenubarTests.swift; sourceTree = "<group>"; };
 		7714109921CD7B6300D8D58B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7714109E21CD7B6300D8D58B /* OnomaMenubarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnomaMenubarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		771410A221CD7B6300D8D58B /* OnomaMenubarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnomaMenubarUITests.swift; sourceTree = "<group>"; };
 		771410A421CD7B6300D8D58B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		774E4E0C21D09E7C00B033A6 /* OnomaMenubar.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = OnomaMenubar.entitlements; sourceTree = "<group>"; };
 		779D2F9D21CD86AE00AD8206 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		77D0F8D021D0683A00AA3C2F /* setdns.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = setdns.sh; sourceTree = "<group>"; };
+		77D7C8BE21D0AC58004C1864 /* OnomaMenubarLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnomaMenubarLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77D7C8C021D0AC58004C1864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77D7C8C721D0AC59004C1864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D7C8C821D0AC59004C1864 /* OnomaMenubarLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OnomaMenubarLauncher.entitlements; sourceTree = "<group>"; };
+		77D7C8CD21D0AC59004C1864 /* OnomaMenubarLauncherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnomaMenubarLauncherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77D7C8D121D0AC59004C1864 /* OnomaMenubarLauncherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnomaMenubarLauncherTests.swift; sourceTree = "<group>"; };
+		77D7C8D321D0AC59004C1864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +185,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7714109B21CD7B6300D8D58B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D7C8BB21D0AC58004C1864 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D7C8CA21D0AC59004C1864 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -186,6 +248,8 @@
 				7714109621CD7B6300D8D58B /* OnomaMenubarTests */,
 				771410A121CD7B6300D8D58B /* OnomaMenubarUITests */,
 				77065C8121CDAEE900140C90 /* HNSDHelper */,
+				77D7C8BF21D0AC58004C1864 /* OnomaMenubarLauncher */,
+				77D7C8D021D0AC59004C1864 /* OnomaMenubarLauncherTests */,
 				7714108421CD7B6000D8D58B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -197,6 +261,8 @@
 				7714109321CD7B6300D8D58B /* OnomaMenubarTests.xctest */,
 				7714109E21CD7B6300D8D58B /* OnomaMenubarUITests.xctest */,
 				77065C8021CDAEE900140C90 /* com.kyokan.HNSDHelper */,
+				77D7C8BE21D0AC58004C1864 /* OnomaMenubarLauncher.app */,
+				77D7C8CD21D0AC59004C1864 /* OnomaMenubarLauncherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,6 +270,7 @@
 		7714108521CD7B6000D8D58B /* OnomaMenubar */ = {
 			isa = PBXGroup;
 			children = (
+				774E4E0C21D09E7C00B033A6 /* OnomaMenubar.entitlements */,
 				77065C6E21CD93C800140C90 /* hnsd */,
 				7714108621CD7B6000D8D58B /* AppDelegate.swift */,
 				7714108821CD7B6200D8D58B /* Assets.xcassets */,
@@ -211,10 +278,10 @@
 				77065CAA21CDD7A700140C90 /* AboutWindow.xib */,
 				77065CAC21CDD81500140C90 /* AboutWindowController.swift */,
 				7714108D21CD7B6300D8D58B /* Info.plist */,
-				7714108E21CD7B6300D8D58B /* OnomaMenubar.entitlements */,
 				779D2F9D21CD86AE00AD8206 /* StatusMenuController.swift */,
 				77065C9421CDB13B00140C90 /* AppProtocol.swift */,
 				77065CA021CDB37900140C90 /* HelperManager.swift */,
+				77D0F8D021D0683A00AA3C2F /* setdns.sh */,
 			);
 			path = OnomaMenubar;
 			sourceTree = "<group>";
@@ -235,6 +302,25 @@
 				771410A421CD7B6300D8D58B /* Info.plist */,
 			);
 			path = OnomaMenubarUITests;
+			sourceTree = "<group>";
+		};
+		77D7C8BF21D0AC58004C1864 /* OnomaMenubarLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				77D7C8C021D0AC58004C1864 /* AppDelegate.swift */,
+				77D7C8C721D0AC59004C1864 /* Info.plist */,
+				77D7C8C821D0AC59004C1864 /* OnomaMenubarLauncher.entitlements */,
+			);
+			path = OnomaMenubarLauncher;
+			sourceTree = "<group>";
+		};
+		77D7C8D021D0AC59004C1864 /* OnomaMenubarLauncherTests */ = {
+			isa = PBXGroup;
+			children = (
+				77D7C8D121D0AC59004C1864 /* OnomaMenubarLauncherTests.swift */,
+				77D7C8D321D0AC59004C1864 /* Info.plist */,
+			);
+			path = OnomaMenubarLauncherTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,11 +352,14 @@
 				7714108021CD7B6000D8D58B /* Frameworks */,
 				7714108121CD7B6000D8D58B /* Resources */,
 				77065C9921CDB1CC00140C90 /* Copy Helper */,
-				77065CA821CDCC2000140C90 /* Copy HSD */,
+				77065CA821CDCC2000140C90 /* Copy Binaries */,
+				774E4E0D21D09EC300B033A6 /* Copy Scripts */,
+				77D7C8E821D0AF5C004C1864 /* Copy Login Items */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				77D7C8EB21D0AFAB004C1864 /* PBXTargetDependency */,
 				77065C9821CDB19F00140C90 /* PBXTargetDependency */,
 			);
 			name = OnomaMenubar;
@@ -314,6 +403,41 @@
 			productReference = 7714109E21CD7B6300D8D58B /* OnomaMenubarUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		77D7C8BD21D0AC58004C1864 /* OnomaMenubarLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77D7C8E521D0AC5A004C1864 /* Build configuration list for PBXNativeTarget "OnomaMenubarLauncher" */;
+			buildPhases = (
+				77D7C8BA21D0AC58004C1864 /* Sources */,
+				77D7C8BB21D0AC58004C1864 /* Frameworks */,
+				77D7C8BC21D0AC58004C1864 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnomaMenubarLauncher;
+			productName = OnomaMenubarLauncher;
+			productReference = 77D7C8BE21D0AC58004C1864 /* OnomaMenubarLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77D7C8CC21D0AC59004C1864 /* OnomaMenubarLauncherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77D7C8E621D0AC5A004C1864 /* Build configuration list for PBXNativeTarget "OnomaMenubarLauncherTests" */;
+			buildPhases = (
+				77D7C8C921D0AC59004C1864 /* Sources */,
+				77D7C8CA21D0AC59004C1864 /* Frameworks */,
+				77D7C8CB21D0AC59004C1864 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77D7C8CF21D0AC59004C1864 /* PBXTargetDependency */,
+			);
+			name = OnomaMenubarLauncherTests;
+			productName = OnomaMenubarLauncherTests;
+			productReference = 77D7C8CD21D0AC59004C1864 /* OnomaMenubarLauncherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -338,6 +462,13 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 7714108221CD7B6000D8D58B;
 					};
+					77D7C8BD21D0AC58004C1864 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					77D7C8CC21D0AC59004C1864 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 77D7C8BD21D0AC58004C1864;
+					};
 				};
 			};
 			buildConfigurationList = 7714107E21CD7B6000D8D58B /* Build configuration list for PBXProject "OnomaMenubar" */;
@@ -357,6 +488,8 @@
 				7714109221CD7B6300D8D58B /* OnomaMenubarTests */,
 				7714109D21CD7B6300D8D58B /* OnomaMenubarUITests */,
 				77065C7F21CDAEE900140C90 /* HNSDHelper */,
+				77D7C8BD21D0AC58004C1864 /* OnomaMenubarLauncher */,
+				77D7C8CC21D0AC59004C1864 /* OnomaMenubarLauncherTests */,
 			);
 		};
 /* End PBXProject section */
@@ -380,6 +513,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7714109C21CD7B6300D8D58B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D7C8BC21D0AC58004C1864 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D7C8CB21D0AC59004C1864 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -473,6 +620,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77D7C8BA21D0AC58004C1864 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77D7C8C121D0AC58004C1864 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D7C8C921D0AC59004C1864 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77D7C8D221D0AC59004C1864 /* OnomaMenubarLauncherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -490,6 +653,16 @@
 			isa = PBXTargetDependency;
 			target = 7714108221CD7B6000D8D58B /* OnomaMenubar */;
 			targetProxy = 7714109F21CD7B6300D8D58B /* PBXContainerItemProxy */;
+		};
+		77D7C8CF21D0AC59004C1864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77D7C8BD21D0AC58004C1864 /* OnomaMenubarLauncher */;
+			targetProxy = 77D7C8CE21D0AC59004C1864 /* PBXContainerItemProxy */;
+		};
+		77D7C8EB21D0AFAB004C1864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77D7C8BD21D0AC58004C1864 /* OnomaMenubarLauncher */;
+			targetProxy = 77D7C8EA21D0AFAB004C1864 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -602,6 +775,7 @@
 				);
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -792,6 +966,90 @@
 			};
 			name = Release;
 		};
+		77D7C8DF21D0AC5A004C1864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OnomaMenubarLauncher/OnomaMenubarLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9K92Z9CUR5;
+				INFOPLIST_FILE = OnomaMenubarLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyokan.OnomaMenubarLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		77D7C8E021D0AC5A004C1864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OnomaMenubarLauncher/OnomaMenubarLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9K92Z9CUR5;
+				INFOPLIST_FILE = OnomaMenubarLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyokan.OnomaMenubarLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		77D7C8E121D0AC5A004C1864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OnomaMenubarLauncherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyokan.OnomaMenubarLauncherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnomaMenubarLauncher.app/Contents/MacOS/OnomaMenubarLauncher";
+			};
+			name = Debug;
+		};
+		77D7C8E221D0AC5A004C1864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OnomaMenubarLauncherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyokan.OnomaMenubarLauncherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnomaMenubarLauncher.app/Contents/MacOS/OnomaMenubarLauncher";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -836,6 +1094,24 @@
 			buildConfigurations = (
 				771410AE21CD7B6300D8D58B /* Debug */,
 				771410AF21CD7B6300D8D58B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77D7C8E521D0AC5A004C1864 /* Build configuration list for PBXNativeTarget "OnomaMenubarLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77D7C8DF21D0AC5A004C1864 /* Debug */,
+				77D7C8E021D0AC5A004C1864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77D7C8E621D0AC5A004C1864 /* Build configuration list for PBXNativeTarget "OnomaMenubarLauncherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77D7C8E121D0AC5A004C1864 /* Debug */,
+				77D7C8E221D0AC5A004C1864 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -20,7 +20,7 @@ class HelperAuthorization {
     // FIXME: Add all functions that require authentication here.
     
     static let authorizationRights = [
-        HelperAuthorizationRight(command: #selector(HelperProtocol.startDaemon(withUrl:completion:)),
+        HelperAuthorizationRight(command: #selector(HelperProtocol.startDaemon(completion:)),
                                  description: "Please enter your password to connect to Handshake.",
                                  ruleCustom: [kAuthorizationRightKeyClass: "user", kAuthorizationRightKeyGroup: "admin", kAuthorizationRightKeyVersion: 1])
     ]

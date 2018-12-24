@@ -30,7 +30,6 @@ class HelperManager: NSObject, AppProtocol {
         
         self.currentHelperConnection = connection
         self.currentHelperConnection?.resume()
-        
         return self.currentHelperConnection
     }
     
@@ -86,14 +85,14 @@ class HelperManager: NSObject, AppProtocol {
     func log(stdOut: String) {
         guard !stdOut.isEmpty else { return }
         OperationQueue.main.addOperation {
-           NSLog("stdin %@", stdOut)
+           NSLog("[stdin] %@", stdOut)
         }
     }
     
     func log(stdErr: String) {
         guard !stdErr.isEmpty else { return }
         OperationQueue.main.addOperation {
-            NSLog("stdout %@", stdErr)
+            NSLog("[stdout] %@", stdErr)
         }
     }
 }

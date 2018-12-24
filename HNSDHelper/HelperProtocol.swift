@@ -12,5 +12,7 @@ import Foundation
 protocol HelperProtocol {
     func getVersion(completion: @escaping (String) -> Void)
     func daemonStatus(completion: @escaping (Bool) -> Void)
-    func startDaemon(withUrl: URL, completion: @escaping (NSNumber) -> Void)
+    func setURLs(withHNSDURL: URL, withSetDNSURL: URL, completion: @escaping (Bool) -> Void)
+    func startDaemon(completion: @escaping (Bool) -> Void)
+    func stopDaemon(completion: @escaping (Bool) -> Void)
 }

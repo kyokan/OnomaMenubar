@@ -8,14 +8,19 @@
 
 import Foundation
 
+enum STDIOType {
+    case StdOut
+    case StdErr
+}
+
 class Helper: NSObject, NSXPCListenerDelegate, HelperProtocol {
     private let listener: NSXPCListener
-    
     private var connections = [NSXPCConnection]()
     private var shouldQuit = false
     private var shouldQuitCheckInterval = 1.0
-    private var isDaemonRunning = false
     private var task: Process?
+    private var hnsdURL: URL?
+    private var setDNSURL: URL?
     
     // MARK: -
     // MARK: Initialization
@@ -27,6 +32,7 @@ class Helper: NSObject, NSXPCListenerDelegate, HelperProtocol {
     }
     
     public func run() {
+        NSLog("starting")
         self.listener.resume()
         
         while !self.shouldQuit {
@@ -68,52 +74,56 @@ class Helper: NSObject, NSXPCListenerDelegate, HelperProtocol {
     }
     
     func daemonStatus(completion: (Bool) -> Void) {
-        completion(isDaemonRunning)
+        completion(task != nil)
     }
     
-    func startDaemon(withUrl: URL, completion: @escaping (NSNumber) -> Void) {
-        if self.isDaemonRunning {
-            completion(0)
+    func setURLs(withHNSDURL: URL, withSetDNSURL: URL, completion: @escaping (Bool) -> Void) {
+        hnsdURL = withHNSDURL
+        setDNSURL = withSetDNSURL
+        completion(true)
+    }
+    
+    func startDaemon(completion: @escaping (Bool) -> Void) {
+        if self.task != nil {
+            completion(true)
             return
         }
         
-        self.isDaemonRunning = true
         let arguments = ["-p", "4", "-r", "127.0.0.1:53", "-s", "aorsxa4ylaacshipyjkfbvzfkh3jhh4yowtoqdt64nzemqtiw2whk@45.55.108.48"]
         
         task = Process()
         let stdOut = Pipe()
-        
-        let stdOutHandler =  { (file: FileHandle!) -> Void in
-            let data = file.availableData
-            guard let output = NSString(data: data, encoding: String.Encoding.utf8.rawValue) else { return }
-            if let remoteObject = self.connection()?.remoteObjectProxy as? AppProtocol {
-                remoteObject.log(stdOut: output as String)
-            }
-        }
+        let stdOutHandler =  makeSTDIOHandler(type: STDIOType.StdOut)
         stdOut.fileHandleForReading.readabilityHandler = stdOutHandler
-        
-        let stdErr:Pipe = Pipe()
-        let stdErrHandler =  { (file: FileHandle!) -> Void in
-            let data = file.availableData
-            guard let output = NSString(data: data, encoding: String.Encoding.utf8.rawValue) else { return }
-            if let remoteObject = self.connection()?.remoteObjectProxy as? AppProtocol {
-                remoteObject.log(stdErr: output as String)
-            }
-        }
+        let stdErr: Pipe = Pipe()
+        let stdErrHandler =  makeSTDIOHandler(type: STDIOType.StdErr)
         stdErr.fileHandleForReading.readabilityHandler = stdErrHandler
-        task!.executableURL = withUrl
+        task!.executableURL = hnsdURL
         task!.arguments = arguments
         task!.standardOutput = stdOut
         task!.standardError = stdErr
-        
         task!.terminationHandler = { task in
-//            completion(NSNumber(value: task.terminationStatus))
+            self.task = nil
         }
         
         OperationQueue.main.addOperation {
             self.task!.launch()
-            completion(0)
+            self.setDNS(servers: ["127.0.0.1"], completion: { code in
+                completion(code == 0)
+            })
         }
+    }
+    
+    func stopDaemon(completion: @escaping (Bool) -> Void) {
+        if task == nil {
+            return
+        }
+        
+        // setting to nil is handled in termination handler above
+        task?.terminate()
+        setDNS(servers: ["empty"], completion: { code in
+            completion(code == 0)
+        })
     }
     
     private func isValid(connection: NSXPCConnection) -> Bool {
@@ -141,7 +151,39 @@ class Helper: NSObject, NSXPCListenerDelegate, HelperProtocol {
         return self.connections.last
     }
     
-    private func runTaskURL(url: URL, arguments: Array<String>, completion:@escaping ((NSNumber) -> Void)) -> Void {
+    private func setDNS(servers: [String], completion: @escaping (NSNumber) -> Void) {
+        let setupTask = Process()
+        setupTask.executableURL = setDNSURL
+        let stdOut = Pipe()
+        let stdOutHandler =  makeSTDIOHandler(type: STDIOType.StdOut)
+        stdOut.fileHandleForReading.readabilityHandler = stdOutHandler
+        let stdErr: Pipe = Pipe()
+        let stdErrHandler =  makeSTDIOHandler(type: STDIOType.StdErr)
+        stdErr.fileHandleForReading.readabilityHandler = stdErrHandler
+        setupTask.standardOutput = stdOut
+        setupTask.standardError = stdErr
+        setupTask.arguments = servers
+        setupTask.terminationHandler = { task in
+            completion(NSNumber(value: task.terminationStatus))
+        }
         
+        OperationQueue.main.addOperation {
+            setupTask.launch()
+        }
+    }
+    
+    private func makeSTDIOHandler(type: STDIOType) -> (_: FileHandle) -> Void {
+        return { (file: FileHandle!) -> Void in
+            let data = file.availableData
+            guard let output = NSString(data: data, encoding: String.Encoding.utf8.rawValue) else { return }
+            if let remoteObject = self.connection()?.remoteObjectProxy as? AppProtocol {
+                if type == STDIOType.StdOut {
+                    remoteObject.log(stdOut: output as String)
+                } else {
+                    remoteObject.log(stdErr: output as String)
+                }
+            }
+        }
     }
 }
+
