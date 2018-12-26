@@ -26,16 +26,16 @@ class StatusMenuController: NSObject {
     
     private var daemonIsRunning: Bool = false
     
+    private let kOpenAtLogin = "openAtLogin"
+    
     override func awakeFromNib() {
         let icon = NSImage(named: "statusIcon")
         icon?.isTemplate = true
         statusItem.button?.image = icon
         statusItem.menu = statusMenu
         
-        let foundHelper = NSWorkspace.shared.runningApplications.contains {
-            $0.bundleIdentifier == launcherBundleName
-        }
-        openAtLoginMenuItem.state = foundHelper ? .on : .off
+        let openAtLogin = UserDefaults.standard.bool(forKey: kOpenAtLogin)
+        openAtLoginMenuItem.state = openAtLogin ? .on : .off
         
         do {
             try HelperAuthorization.authorizationRightsUpdateDatabase()
@@ -114,9 +114,11 @@ class StatusMenuController: NSObject {
             if autolaunch {
                 NSLog("Login item enabled.")
                 sender.state = .on
+                UserDefaults.standard.set(true, forKey: kOpenAtLogin)
             } else {
                 NSLog("Login item disabled.")
                 sender.state = .off
+                UserDefaults.standard.set(false, forKey: kOpenAtLogin)
             }
         } else {
             showDialog(title: "Something went wrong.", message: "We couldn't make the app open at login. If you ask for help, please include the following error code: ERR_LOGIN_ITEM_SET.", buttonTitle: "OK", type: .warning)

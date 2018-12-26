@@ -10,7 +10,16 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-    func applicationDidFinishLaunching(_ aNotification: Notification) {}
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
+        let runningApps = NSWorkspace.shared.runningApplications
+        let isRunning = runningApps.contains {
+            $0.bundleIdentifier == "com.kyokan.OnomaMenubarLauncher"
+        }
+        
+        if isRunning {
+            DistributedNotificationCenter.default().postNotificationName(NCConstants.kKillMe, object: Bundle.main.bundleIdentifier, userInfo: nil, options: DistributedNotificationCenter.Options.deliverImmediately)
+        }
+    }
 
     func applicationWillTerminate(_ aNotification: Notification) {}
 }

@@ -17,17 +17,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         if !isRunning {
-            var path = Bundle.main.bundlePath as NSString
-            for _ in 1...4 {
-                path = path.deletingLastPathComponent as NSString
-            }
-            NSWorkspace.shared.launchApplication(path as String)
+            DistributedNotificationCenter.default().addObserver(self, selector: #selector(self.terminate), name: NCConstants.kKillMe, object: "com.kyokan.OnomaMenubar")
+            
+            let path = Bundle.main.bundlePath as NSString
+            var components = path.pathComponents
+            components.removeLast(3)
+            components.append("MacOS")
+            components.append("OnomaMenubar")
+            let newPath = NSString.path(withComponents: components)
+            NSWorkspace.shared.launchApplication(newPath)
+        } else {
+            self.terminate()
         }
-        
-        NSApp.terminate(nil)
     }
 
-    func applicationWillTerminate(_ aNotification: Notification) {
-        
+    func applicationWillTerminate(_ aNotification: Notification) {}
+    
+    @objc
+    func terminate() {
+        NSApp.terminate(nil)
     }
 }

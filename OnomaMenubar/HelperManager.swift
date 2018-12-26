@@ -44,6 +44,20 @@ class HelperManager: NSObject, AppProtocol {
     }
     
     func helperStatus(completion: @escaping (_ installed: Bool) -> Void) {
+        var sent = false
+        
+        func wrappedCompletion (_ realCompletion: Bool) -> Void {
+            if sent {
+                return
+            }
+            
+            sent = true
+            completion(realCompletion)
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+            wrappedCompletion(false)
+        }
         
         // Comppare the CFBundleShortVersionString from the Info.plisin the helper inside our application bundle with the one on disk.
         
@@ -52,12 +66,12 @@ class HelperManager: NSObject, AppProtocol {
             let helperBundleInfo = CFBundleCopyInfoDictionaryForURL(helperURL as CFURL) as? [String: Any],
             let helperVersion = helperBundleInfo["CFBundleShortVersionString"] as? String,
             let helper = self.helper(completion) else {
-                completion(false)
+                wrappedCompletion(false)
                 return
         }
         
         helper.getVersion { installedHelperVersion in
-            completion(installedHelperVersion == helperVersion)
+            wrappedCompletion(installedHelperVersion == helperVersion)
         }
     }
     

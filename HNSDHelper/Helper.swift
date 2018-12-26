@@ -116,6 +116,7 @@ class Helper: NSObject, NSXPCListenerDelegate, HelperProtocol {
     
     func stopDaemon(completion: @escaping (Bool) -> Void) {
         if task == nil {
+            completion(true)
             return
         }
         
