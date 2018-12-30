@@ -25,3 +25,7 @@ We've been dogfooding the app since mid-December, and there haven't been any maj
 ## HNSD Version
 
 A compiled version of `hnsd` with commit hash `895d89c25d316d18df9d374fe78aae3902bc89fb` is included in this repo. As `hnsd` gets updated, we'll also update the included binary. The `hnsd` binary is code signed alongside all other build products.
+
+## Acknowlegements
+
+Many thanks to Erik Berglund, whose [SwiftPrivilegedHelper](https://github.com/erikberglund/SwiftPrivilegedHelper) example application forms the basis of this app's privilege escalation and helper management code.
