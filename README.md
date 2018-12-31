@@ -1,6 +1,6 @@
 # OnomaMenubar
 
-Displays a menu bar app that lets users route DNS traffic through a local `HNSD` SPV node. Here's a screenshot of what you'll get:
+Displays a menu bar app that lets users route DNS traffic through a local `hnsd` SPV node. Here's a screenshot of what you'll get:
 
 ![screenshot](./docs/screenshot.png)
 
@@ -23,6 +23,8 @@ We've been dogfooding the app since mid-December, and there haven't been any maj
 ## HNSD Version
 
 A compiled version of `hnsd` with commit hash `895d89c25d316d18df9d374fe78aae3902bc89fb` is included in this repo. As `hnsd` gets updated, we'll also update the included binary. The `hnsd` binary is code signed alongside all other build products.
+
+Note that `hnsd` uses statically-compiled versions of `libunbound` and `openssl`.
 
 ## Acknowlegements
 
