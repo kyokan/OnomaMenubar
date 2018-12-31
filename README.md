@@ -6,9 +6,7 @@ Displays a menu bar app that lets users route DNS traffic through a local `HNSD`
 
 ## Installation
 
-We recommend downloading one of the DMG files from this repo's [Releases](https://github.com/kyokan/OnomaMenubar/releases) page. You may get 'unidentified developer' messages while we're going through the Apple Developer Center verifiation process. To bypass those, right-click on the application and select 'Open' from the menu.
-
-Once we have a usable Apple Developer account, we'll use Apple's notary service to sign the binaries and the messages will go away.
+We recommend downloading one of the DMG files from this repo's [Releases](https://github.com/kyokan/OnomaMenubar/releases) page. You may get 'unidentified developer' messages if you download versions prior to `v0.2`.
 
 ## How It Works
 
