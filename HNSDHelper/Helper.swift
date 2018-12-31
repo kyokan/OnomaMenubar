@@ -98,7 +98,11 @@ class Helper: NSObject, NSXPCListenerDelegate, HelperProtocol {
         let stdErr: Pipe = Pipe()
         let stdErrHandler =  makeSTDIOHandler(type: STDIOType.StdErr)
         stdErr.fileHandleForReading.readabilityHandler = stdErrHandler
-        task!.executableURL = hnsdURL
+        if #available(OSX 10.13, *) {
+            task!.executableURL = hnsdURL
+        } else {
+            task!.launchPath = hnsdURL?.absoluteString
+        }
         task!.arguments = arguments
         task!.standardOutput = stdOut
         task!.standardError = stdErr
@@ -154,7 +158,11 @@ class Helper: NSObject, NSXPCListenerDelegate, HelperProtocol {
     
     private func setDNS(servers: [String], completion: @escaping (NSNumber) -> Void) {
         let setupTask = Process()
-        setupTask.executableURL = setDNSURL
+        if #available(OSX 10.13, *) {
+            setupTask.executableURL = setDNSURL
+        } else {
+            setupTask.launchPath = setDNSURL?.absoluteString
+        }
         let stdOut = Pipe()
         let stdOutHandler =  makeSTDIOHandler(type: STDIOType.StdOut)
         stdOut.fileHandleForReading.readabilityHandler = stdOutHandler
